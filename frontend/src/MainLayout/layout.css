@@ -1,0 +1,47 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #3a3f4a;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px; 
+  left: 0;
+  width: 200px;
+  height: calc(100% - 60px);
+  background-color: #eaf0fb;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+
+.content-area {
+  position: absolute;
+  top: 35px; 
+  left: 200px;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  margin-left: 25px;
+}

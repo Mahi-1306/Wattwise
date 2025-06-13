@@ -1,0 +1,56 @@
+.adduser-container {
+  padding: 20px;
+}
+
+.adduser-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.adduser-controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.adduser-search,
+.adduser-dropdown {
+  width: 250px;
+}
+
+.adduser-table {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  justify-content: space-evenly;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  padding: 15px;
+}
+.table th{
+    background-color: #5b8cc7;
+    color: white;
+    font-weight: bold;
+}
+
+.no-data-ui {
+  text-align: center;
+  padding: 20px;
+  color: #999090;
+}
+
+.no-data-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.button{
+    margin-left: 70%;
+}

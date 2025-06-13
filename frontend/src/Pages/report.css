@@ -1,0 +1,101 @@
+.Rep {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.report-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+
+.report-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.report-search,
+.report-dropdown,
+.ant-picker {
+  height: 44px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.report-search {
+  width: 240px;
+}
+
+.report-dropdown {
+  width: 240px;
+  margin-left: 280px;
+}
+
+.date-filter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.date-filter label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333030;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.report-table {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  font-size: 15px;
+  padding: 10px;
+}
+
+th {
+  background-color: #5b8cc7;
+  font-weight: bold;
+  color: white;
+}
+
+td {
+  color: black;
+  background-color: #f9f9f9;
+}
+
+.no-data-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 200px;
+  color: #888;
+  font-size: 16px;
+}
+
+.no-data-icon {
+  font-size: 50px;
+  color: #676161;
+  margin: 20px 0 12px;
+}
+.input-data{
+  color: black;
+}
