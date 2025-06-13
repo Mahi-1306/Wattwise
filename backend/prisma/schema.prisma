@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model machine {
+  id           Int           @id @default(autoincrement())
+  machine_name String        @unique(map: "Machine_machine_name_key")
+  created_by   Int
+  createdAt    DateTime      @default(now())
+  machinedata  machinedata[]
+
+  @@index([created_by], map: "Machine_created_by_fkey")
+}
+
+model machinedata {
+  id         Int      @id @default(autoincrement())
+  machine_id Int
+  date       DateTime @default(now())
+  data       String
+  machine    machine  @relation(fields: [machine_id], references: [id], map: "MachineData_machine_id_fkey")
+
+  @@index([machine_id], map: "MachineData_machine_id_fkey")
+}
+
+model user {
+  id       Int        @id @default(autoincrement())
+  username String     @unique(map: "User_username_key")
+  password String
+  role     user_role?
+}
+
+enum user_role {
+  ADMIN
+  USER
+  GUEST
+}
